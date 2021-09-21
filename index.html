@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 16 Trial Version - https://www.wysiwygwebbuilder.com">
+<link href="derss.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="wwb16.min.js"></script>
+
+<script>
+function myFunction() {
+  var d = new Date();
+  var n = d.getDay();
+  var weekday = new Array(5);
+  weekday[0] = "images/SPazartesi.png";
+  weekday[1] = "images/SSalı.png";
+  weekday[2] = "images/SÇarşamba.png";
+  weekday[3] = "images/SPerşembe.png";
+  weekday[4] = "images/SCuma.png";
+  SetImage('Image1',weekday[n-1]);
+}
+</script>>
+
+</head>
+<body>
+<div id="container">
+
+<div id="wb_Image1" style="position:absolute;left:0px;top:0px;width:750px;height:1566px;z-index:1;">
+<img src="images/SPazartesi.png" id="Image1" alt="" width="750" height="1583"></div>
+<input type="submit" id="Button2" onclick="SetImage('Image1','images/SPazartesi.png');return false;" name="" value="Pazartesi" style="position:absolute;left:3px;top:1px;width:150px;height:110px;z-index:2;">
+<input type="submit" id="Button1" onclick="SetImage('Image1','images/SSalı.png');return false;" name="" value="Salı" style="position:absolute;left:153px;top:1px;width:150px;height:110px;z-index:3;">
+<input type="submit" id="Button3" onclick="SetImage('Image1','images/SPerşembe.png');return false;" name="" value="Perşembe" style="position:absolute;left:453px;top:1px;width:150px;height:110px;z-index:4;">
+<input type="submit" id="Button4" onclick="SetImage('Image1','images/SÇarşamba.png');return false;" name="" value="Çarşamba" style="position:absolute;left:303px;top:1px;width:150px;height:110px;z-index:5;">
+<input type="submit" id="Button5" onclick="SetImage('Image1','images/SCuma.png');return false;" name="" value="Cuma" style="position:absolute;left:600px;top:1px;width:150px;height:110px;z-index:6;">
+<input type="submit" id="Button6" onclick="myFunction();return false;" name="" value="Bugün" style="position:absolute;left:280px;top:123px;width:191px;height:61px;z-index:7;">
+</div>
+</body>
+</html>
